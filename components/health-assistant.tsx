@@ -19,7 +19,7 @@ type HealthAssessment = {
   explanation: string;
 };
 
-export function HealthAssistant() {
+export default function HealthAssistant() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [assessment, setAssessment] = useState<HealthAssessment | null>(null);

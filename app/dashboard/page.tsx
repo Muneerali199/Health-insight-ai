@@ -1,4 +1,8 @@
-import { HealthAssistant } from "@/components/health-assistant";
+import dynamic from "next/dynamic";
+
+const HealthAssistant = dynamic(() => import("@/components/health-assistant"), {
+  ssr: false,
+});
 
 export default function DashboardPage() {
   return (
